@@ -26,16 +26,13 @@ namespace Q146124 {
             this.components = new System.ComponentModel.Container();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.carsDBDataSet = new Q146124.CarsDBDataSet();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCarId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colUserId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAllDay = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.carSchedulingTableAdapter = new Q146124.CarsDBDataSetTableAdapters.CarSchedulingTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carsDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,12 +52,6 @@ namespace Q146124 {
             // bindingSource1
             // 
             this.bindingSource1.DataMember = "CarScheduling";
-            this.bindingSource1.DataSource = this.carsDBDataSet;
-            // 
-            // carsDBDataSet
-            // 
-            this.carsDBDataSet.DataSetName = "CarsDBDataSet";
-            this.carsDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView1
             // 
@@ -106,10 +97,6 @@ namespace Q146124 {
             this.colAllDay.Visible = true;
             this.colAllDay.VisibleIndex = 3;
             // 
-            // carSchedulingTableAdapter
-            // 
-            this.carSchedulingTableAdapter.ClearBeforeFill = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,7 +108,6 @@ namespace Q146124 {
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carsDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -131,9 +117,7 @@ namespace Q146124 {
 
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private CarsDBDataSet carsDBDataSet;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private Q146124.CarsDBDataSetTableAdapters.CarSchedulingTableAdapter carSchedulingTableAdapter;
         private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraGrid.Columns.GridColumn colCarId;
         private DevExpress.XtraGrid.Columns.GridColumn colUserId;
